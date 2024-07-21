@@ -1,0 +1,12 @@
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+  <div class="col" *ngFor="let p of photos">
+    <div class="card shadow-sm">
+      <a [href]="p.url" target="_blank">
+        <img [src]="p.thumbnailUrl" class="card-img-top" />
+      </a>
+      <div class="card-body">
+        <p class="card-text">{{ p.title }}</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,6 @@
+<ul class="list-group">
+  <li class="list-group-item >" *ngFor="let a of albums">
+    <!-- <a routerLink="/albums/" {{a.id}}>{{ a.title }}</a> -->
+    <a [routerLink]="['/albums', a.id]">{{ a.title }}</a>
+  </li>
+</ul>
